@@ -1,0 +1,118 @@
+body {
+	background: #f4f4f4;
+}
+
+input {
+	width:85%;
+}
+
+#container {
+	max-width:800px;
+	background: #ffffff;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid #000;
+	box-sizing:border-box; /* tells browser to include border in size specs */
+}
+
+#logoImg {
+	width:40%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.headerDiv {
+	width:100%;
+	text-align:center;
+	vertical-align:top;
+}
+
+.row {
+    display: flex; /* equal height of the children */
+}
+
+#leftDiv {
+	float:left;
+	border:1px solid #000;
+	width:45%;
+	margin-top:25px;
+	margin-left: 5px;
+}
+
+#rightDiv {
+	float:right;
+	width:45%;
+	margin-top:25px;
+	margin-right:5px;
+}
+
+.inputsDiv {
+	border-top:1px solid #000;
+	padding:10px;
+}
+
+.right {
+	float:right;
+}
+
+#inputs input {
+	float:left;
+	font-size:100%;
+	font-family:'comic sans ms';
+	padding-left:10px;
+	margin:5px;
+}
+
+hr.fancy-line { 
+    border: 0; 
+    height: 1px;
+
+}
+
+hr.fancy-line:before {
+    top: -0.5em;
+    height: 1em;
+}
+
+hr.fancy-line:after {
+    content:'';
+    height: 0.5em;
+    top: 1px;
+}
+
+hr.fancy-line:before, hr.fancy-line:after {
+    content: '';
+    /*position: absolute;*//* This undesired; causes a bar to appear at top of browser */
+    width: 100%;
+}
+
+hr.fancy-line, hr.fancy-line:before {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 75%);
+}
+
+hr.fancy-line:after {
+    background: #000;/* /*f4f4f4*/
+}
+
+.myButton {
+	background-color:#ed8223;
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:18px;
+	line-height:30px;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border:0;
+	text-shadow:#C17C3A 0 -1px 0;
+}
+
+.myButton:hover {
+	background-color:#238eed;
+	cursor: pointer;
+}
+
+p.errorMsg {
+	color:#ff0000;
+}      
